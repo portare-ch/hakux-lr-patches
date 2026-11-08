@@ -1,6 +1,9 @@
 # Baldur's Gate - Dark Alliance (USA), default.xbe
-# Patch: icup321, https://github.com/icup321/XboxGraphicalPatches (Miscellaneous Patches)
-# Tested: hakuX-lr fd7f638dd2 (XBE patch branch), RetroArch 1.22.2, x86-64. Applies and the game plays; no visible difference in the Elfsong Tavern at the default camera distance.
+# icup321, https://github.com/icup321/XboxGraphicalPatches (Miscellaneous Patches)
+# Tested with hakuX-lr fd7f638dd2 and RetroArch 1.22.2 (x86-64).
+# The patch applies and the game runs.
+# The Elfsong Tavern looks the same at the default camera distance.
+
 cheats = 1
 cheat0_desc = "Force High LOD [restart]"
 cheat0_handler = 0

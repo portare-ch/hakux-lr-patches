@@ -1,57 +1,47 @@
 # hakuX-lr patches
 
-XBE patches for [hakuX-lr](https://github.com/portare-ch/hakuX-lr) as
-RetroArch cheat files: one folder per game release, one `.cht` per patch.
-Each file holds one emulator-handled entry whose code is an `xbe-patch-v1`
-patch, off by default. hakuX-lr's
-[`native/README.linux.md`](https://github.com/portare-ch/hakuX-lr/blob/master/native/README.linux.md)
-describes the format.
+Original Xbox patches for hakuX-lr in RetroArch. Each `.cht` is disabled by
+default and targets a specific XBE revision. Use a core build with
+[XBE patch support](https://github.com/portare-ch/hakuX-lr/pull/169).
 
-## Using a patch
+## Use a patch
 
 1. Start the game in RetroArch with hakuX-lr.
-2. Open **Quick Menu → Cheats → Load Cheat File (Replace)** and pick the `.cht`.
-3. Enable the entry, choose **Apply Changes**, then **Quick Menu → Restart**.
-4. For widescreen patches, set the core option **Screen Format** to
-   **Widescreen** and RetroArch's aspect ratio to **Core provided**.
+2. Open **Quick Menu → Cheats → Load Cheat File (Replace)** and select the
+   `.cht`. Use **Load Cheat File (Append)** to keep existing cheats.
+3. Enable the patch and select **Apply Changes**.
+4. For widescreen, set the core's **Screen Format** to **Widescreen** and
+   RetroArch's **Aspect Ratio** to **Core provided**.
+5. Select **Quick Menu → Restart**.
 
-A patch applies only to the XBE whose CRC-32 and size it names. Another
-revision boots unpatched, and the log says why. To return to the original,
-disable the entry and restart.
-
-Enable only one patch per XBE: if two enabled patches match the same
-executable, neither applies. To combine edits, use a single entry, as in
-`Widescreen + High LOD.cht`.
+The core checks the XBE's CRC-32 and size before applying a patch. It logs
+revision mismatches and conflicts. Enable one patch per XBE, or use a combined
+entry. To revert a patch, disable it, apply changes, and restart.
 
 ## Patches
 
-| Game | Patch | Source | Tested |
-| --- | --- | --- | --- |
-| Baldur's Gate: Dark Alliance (USA) | Widescreen, High LOD, both | icup321 | yes |
-| Baldur's Gate: Dark Alliance II (USA) | Widescreen | icup321 | yes |
-| JSRF: Jet Set Radio Future (USA) | Widescreen | icup321 | yes |
-| Spider-Man (USA) | Widescreen | icup321 | yes |
-| Turok: Evolution (USA) | Widescreen | icup321 | yes |
+| Game | Patches |
+| --- | --- |
+| Baldur's Gate: Dark Alliance (USA) | [Widescreen](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29/Widescreen.cht), [High LOD](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29/High%20LOD.cht), [Widescreen + High LOD](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29/Widescreen%20%2B%20High%20LOD.cht) |
+| Baldur's Gate: Dark Alliance II (USA) | [Widescreen](Baldur%27s%20Gate%20-%20Dark%20Alliance%20II%20%28USA%29/Widescreen.cht) |
+| Jet Set Radio Future (USA) | [Widescreen](JSRF%20-%20Jet%20Set%20Radio%20Future%20%28USA%29/Widescreen.cht) |
+| Spider-Man (USA) | [Widescreen](Spider-Man%20%28USA%29/Widescreen.cht) |
+| Turok: Evolution (USA) | [Widescreen](Turok%20-%20Evolution%20%28USA%29/Widescreen.cht) |
 
-The test notes are at the top of each `.cht`. icup321's patches come from
-[XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches). The
-widescreen patches change the 3D view only; the HUD stays stretched. Its
-Dark Summit patch is missing: on the USA disc's XBE it writes back the
-bytes that are already there.
+These patches come from [icup321's XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches).
+Each file records the tested build and result. Widescreen expands the 3D view
+to 16:9. The HUD remains stretched.
 
-## Contributing
+## Contribute a patch
 
-Convert the patch with hakuX-lr's `tools/mods/xbe-to-cht.py`. It needs the
-stock XBE and either the IPS or BPS patch (applied with Floating IPS) or the
-patched XBE. Use `--note` to add these comment lines at the top of the file:
-
-- the game, region and revision, and the XBE's file name;
-- the patch's original author and source (a link);
-- test results: the hakuX-lr build, and what was checked (scene, HUD, menus,
-  cutscenes) and what still looks wrong.
+From the hakuX-lr checkout, convert the stock XBE and an IPS, BPS, or patched
+XBE. IPS and BPS inputs require Floating IPS (`flips`).
 
 ```sh
-python3 tools/mods/xbe-to-cht.py default.xbe "Game (16-9 Widescreen Patch).ips" \
-  --note "Game (USA), default.xbe" --note "Patch: author, https://..." \
-  --note "Tested: hakuX-lr ..., the scene at 16:9, HUD ..." > "Game (USA)/Widescreen.cht"
+python3 tools/mods/xbe-to-cht.py default.xbe widescreen.ips > Widescreen.cht
 ```
+
+Put the file in the folder for its game release. Use `--note` to record the
+region, revision, XBE filename, original author, source, and test results.
+Include the core build and what you checked in-game, including any visible
+issues.
