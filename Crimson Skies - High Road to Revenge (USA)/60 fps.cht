@@ -1,0 +1,11 @@
+# Crimson Skies - High Road to Revenge (USA), default.xbe
+# hakuX, converted from mods/4D530021.1/60fps/mod.txt
+# Tested with hakuX-lr fd7f638dd2 and RetroArch 1.22.2 (x86-64).
+# The game runs at 60 fps (30 unpatched).
+# Lifts the 30 fps cap: up to 60 frames a second, the game at its normal speed.
+
+cheats = 1
+cheat0_desc = "60 fps [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 EE590CC8:00312000+00000108:0010+00000F20:8988883CD9C0E8FD0A1E005050DA2424DF6E08DEC9D83518EE2800DB1C2459294E10835E140058C3+0011FBCE:5213EEFF+001208DD:200F01+00120B27:200F01"
+cheat0_enable = false

@@ -24,11 +24,17 @@ entry. To revert a patch, disable it, apply changes, and restart.
 | --- | --- |
 | Baldur's Gate: Dark Alliance (USA) | [Widescreen](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29/Widescreen.cht), [High LOD](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29/High%20LOD.cht), [Widescreen + High LOD](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29/Widescreen%20%2B%20High%20LOD.cht) |
 | Baldur's Gate: Dark Alliance II (USA) | [Widescreen](Baldur%27s%20Gate%20-%20Dark%20Alliance%20II%20%28USA%29/Widescreen.cht) |
+| Conker: Live & Reloaded (USA) | [60 fps](Conker%20-%20Live%20%26%20Reloaded%20%28USA%29/60%20fps.cht) |
+| Crimson Skies: High Road to Revenge (USA) | [60 fps](Crimson%20Skies%20-%20High%20Road%20to%20Revenge%20%28USA%29/60%20fps.cht) |
+| Forza Motorsport (World) | [60 fps](Forza%20Motorsport%20%28World%29/60%20fps.cht) |
+| Halo 2 (USA) | [60 fps](Halo%202%20%28USA%29/60%20fps.cht) |
+| Halo: Combat Evolved (USA, Rev 2) | [60 fps](Halo%20-%20Combat%20Evolved%20%28USA%29%20%28Rev%202%29/60%20fps.cht) |
 | Jet Set Radio Future (USA) | [Widescreen](JSRF%20-%20Jet%20Set%20Radio%20Future%20%28USA%29/Widescreen.cht) |
+| Otogi 2: Immortal Warriors (USA) | [60 fps](Otogi%202%20-%20Immortal%20Warriors%20%28USA%29/60%20fps.cht) |
 | Spider-Man (USA) | [Widescreen](Spider-Man%20%28USA%29/Widescreen.cht) |
 | Turok: Evolution (USA) | [Widescreen](Turok%20-%20Evolution%20%28USA%29/Widescreen.cht) |
 
-These patches come from [icup321's XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches).
+The widescreen and High LOD patches come from [icup321's XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches). The 60 fps patches are hakuX's mods, converted from [`mods/`](mods/README.md).
 Each file records the tested build and result. Widescreen expands the 3D view
 to 16:9. The HUD remains stretched.
 
@@ -45,3 +51,12 @@ Put the file in the folder for its game release. Use `--note` to record the
 region, revision, XBE filename, original author, source, and test results.
 Include the core build and what you checked in-game, including any visible
 issues.
+
+## Android mods
+
+[`mods/`](mods/README.md) holds the hakuX-lr Android app's mods and cheats,
+one folder per title ID and version. hakuX-lr includes this repository as its
+`patches` submodule and packs that folder into the APK. Some mods need more
+than byte patches (`refresh: 120`, title-update sections), so not every mod
+has a `.cht` yet. Convert a mod's XBE patches with hakuX-lr's
+`tools/mods/mod-to-cht.py`.

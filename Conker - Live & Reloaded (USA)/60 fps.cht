@@ -1,0 +1,11 @@
+# Conker - Live & Reloaded (USA), default.xbe
+# hakuX, converted from mods/4D530051.2/60fps/mod.txt
+# Tested with hakuX-lr fd7f638dd2 and RetroArch 1.22.2 (x86-64).
+# The game runs at 60 fps (30 unpatched).
+# The game at 60 frames a second instead of 30 (split screen too, instead of 30 or 20). The game steps by the vblanks each frame took, so it keeps its speed when the device can't hold 60.
+
+cheats = 1
+cheat0_desc = "60 fps [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 645C76B6:0076A000+002978D3:BA01000000881568026C000F1F440000+006B48E8:01"
+cheat0_enable = false

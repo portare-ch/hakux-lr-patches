@@ -1,0 +1,12 @@
+# Forza Motorsport (World), default.xbe
+# hakuX, converted from mods/4D53006E.1/60fps/mod.txt
+# Tested with hakuX-lr fd7f638dd2 and RetroArch 1.22.2 (x86-64).
+# The game runs at 60 fps (30 unpatched).
+# The game at 60 frames a second instead of 30. Each frame shows at the next vblank and the game steps 1/60 s a frame; a frame the device doesn't finish in time shows late, and the game slows down with it.
+# Its 1 title-update patches are left out (xbe-patch-v1 patches disc XBEs).
+
+cheats = 1
+cheat0_desc = "60 fps [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 3FCF8EAD:005BB000+00550804:01"
+cheat0_enable = false
