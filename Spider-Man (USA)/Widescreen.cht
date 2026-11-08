@@ -1,0 +1,8 @@
+# Spider-Man (USA), default.xbe
+# Patch: icup321, https://github.com/icup321/XboxGraphicalPatches (16-9 Widescreen Patches)
+# Tested: hakuX-lr fd7f638dd2 (XBE patch branch), RetroArch 1.22.2, x86-64. The first level: the scene at 16:9 (wider view, not stretched); the HUD stays stretched (the patch leaves it).
+cheats = 1
+cheat0_desc = "Widescreen (16:9) [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 1B0A32DE:00400000+003A47C4:398EE3"
+cheat0_enable = false

@@ -1,0 +1,8 @@
+# Baldur's Gate - Dark Alliance II (USA), default.xbe
+# Patch: icup321, https://github.com/icup321/XboxGraphicalPatches (16-9 Widescreen Patches)
+# Tested: hakuX-lr fd7f638dd2 (XBE patch branch), RetroArch 1.22.2, x86-64. The Trade Way: the scene at 16:9 (wider view, characters not stretched); the HUD stays stretched (the patch leaves it).
+cheats = 1
+cheat0_desc = "Widescreen (16:9) [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 6D3D7B26:00222000+000AFDE1:70+000AFE0C:70+000B3BA2:F0+000B3BB7:90909068D0010000+00114261:70+0015BD8D:0AD7E3+0015E527:70+0015E574:70+0015E5B3:70+001628A0:0AD7E3+00164DD3:00+00164DE3:E0"
+cheat0_enable = false

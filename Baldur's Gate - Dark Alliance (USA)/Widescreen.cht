@@ -1,0 +1,8 @@
+# Baldur's Gate - Dark Alliance (USA), default.xbe
+# Patch: icup321, https://github.com/icup321/XboxGraphicalPatches (16-9 Widescreen Patches)
+# Tested: hakuX-lr fd7f638dd2 (XBE patch branch), RetroArch 1.22.2, x86-64. Elfsong Tavern: the scene at 16:9 (wider view, characters not stretched); the HUD stays stretched (the patch leaves it).
+cheats = 1
+cheat0_desc = "Widescreen (16:9) [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 DF0DB6D8:00157000+0004E163:70+0004E18E:70+000948C4:70+000BD11D:398EE3+000BF4FD:BA+000BF5A9:BA+000BF64F:BA+000C2956:398EE3"
+cheat0_enable = false
