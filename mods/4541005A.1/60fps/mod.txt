@@ -10,6 +10,8 @@ author: hakuX
 # (0x80000002) without, so a driving frame waits two vblanks. The interval
 # is ONE either way now: mov eax, 1 over the and / add that made it. The
 # flag itself and what else reads it stay as they are.
+# (Jao12345's 60 FPS patch in Xbox Magic Patches by Jay changes the same
+# instruction, to ONE_OR_IMMEDIATE; this one was made without it.)
 0x000A3B51: 25 FF FF FF 7F 05 02 00 00 80 -> B8 01 00 00 00 90 90 90 90 90
 # The game steps by measured time (0x1890C0: the milliseconds since the last
 # frame plus what the step before left over, in 1/3600 s), but by no less

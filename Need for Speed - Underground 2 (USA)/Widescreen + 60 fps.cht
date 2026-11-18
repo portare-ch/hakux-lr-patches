@@ -1,0 +1,10 @@
+# Need for Speed - Underground 2 (USA), default.xbe
+# Nemesis2000 (https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) and hakuX; mods/4541005A.1/widescreen and 60fps in one entry
+# Tested with hakuX-lr 8921d9d4a1 and RetroArch 1.22.2 (x86-64), headless.
+# A race has a wider 16:9 view at 60 fps with the core's Screen Format set to Widescreen. The HUD remains stretched.
+# The Widescreen and 60 fps patches in one entry.
+cheats = 1
+cheat0_desc = "Widescreen + 60 fps [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 EDF74C5F:003DA000+00093474:C745100000803FC7450C0000403FC7451C0000803F833D48A63E00037507C7450C0000C03E8B470483F801741983F804741483F802740F83F805740A83F80674+000934B4:0583F8077515C7450CEC51683FC74510CDCC8C3FC7451C0000403F83F809740583F80A7507C7450C56A9193F83F8037507C7450C000000+00093526:7D1C909090+00093B51:B8010000009090909090+00396E02:08"
+cheat0_enable = false

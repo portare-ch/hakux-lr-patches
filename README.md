@@ -30,12 +30,13 @@ entry. To revert a patch, disable it, apply changes, and restart.
 | Halo 2 (USA) | [60 fps](Halo%202%20%28USA%29/60%20fps.cht) |
 | Halo: Combat Evolved (USA, Rev 2) | [60 fps](Halo%20-%20Combat%20Evolved%20%28USA%29%20%28Rev%202%29/60%20fps.cht) |
 | Jet Set Radio Future (USA) | [Widescreen](JSRF%20-%20Jet%20Set%20Radio%20Future%20%28USA%29/Widescreen.cht) |
-| Need for Speed: Underground 2 (USA) | [60 fps](Need%20for%20Speed%20-%20Underground%202%20%28USA%29/60%20fps.cht) |
+| Need for Speed: Underground (USA) | [60 fps](Need%20for%20Speed%20-%20Underground%20%28USA%29/60%20fps.cht), [Widescreen](Need%20for%20Speed%20-%20Underground%20%28USA%29/Widescreen.cht), [Widescreen + 60 fps](Need%20for%20Speed%20-%20Underground%20%28USA%29/Widescreen%20%2B%2060%20fps.cht) |
+| Need for Speed: Underground 2 (USA) | [60 fps](Need%20for%20Speed%20-%20Underground%202%20%28USA%29/60%20fps.cht), [Widescreen](Need%20for%20Speed%20-%20Underground%202%20%28USA%29/Widescreen.cht), [Widescreen + 60 fps](Need%20for%20Speed%20-%20Underground%202%20%28USA%29/Widescreen%20%2B%2060%20fps.cht) |
 | Otogi 2: Immortal Warriors (USA) | [60 fps](Otogi%202%20-%20Immortal%20Warriors%20%28USA%29/60%20fps.cht) |
 | Spider-Man (USA) | [Widescreen](Spider-Man%20%28USA%29/Widescreen.cht) |
 | Turok: Evolution (USA) | [Widescreen](Turok%20-%20Evolution%20%28USA%29/Widescreen.cht) |
 
-The widescreen and High LOD patches come from [icup321's XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches). The 60 fps patches are hakuX's mods, converted from [`mods/`](mods/README.md).
+The widescreen and High LOD patches come from [icup321's XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches). The 60 fps patches are hakuX's mods, converted from [`mods/`](mods/README.md). The Need for Speed: Underground patches are Nemesis2000's (widescreen) and Jao12345's (Underground's 60 fps, with a time step change), from [Xbox Magic Patches by Jay](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay).
 Each file records the tested build and result. Widescreen expands the 3D view
 to 16:9. The HUD remains stretched.
 
