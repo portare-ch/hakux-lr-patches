@@ -1,6 +1,7 @@
 name: Widescreen
 description: A 16:9 view of the 3D scene, with the console's video set to widescreen. The HUD and the menus stay stretched.
 author: Nemesis2000
+screen: widescreen
 
 [default.xbe]
 # Nemesis2000's patch, from Xbox Magic Patches by Jay
