@@ -30,6 +30,7 @@ entry. To revert a patch, disable it, apply changes, and restart.
 | Halo 2 (USA) | [60 fps](Halo%202%20%28USA%29/60%20fps.cht) |
 | Halo: Combat Evolved (USA, Rev 2) | [60 fps](Halo%20-%20Combat%20Evolved%20%28USA%29%20%28Rev%202%29/60%20fps.cht) |
 | Jet Set Radio Future (USA) | [Widescreen](JSRF%20-%20Jet%20Set%20Radio%20Future%20%28USA%29/Widescreen.cht) |
+| Need for Speed: Underground 2 (USA) | [60 fps](Need%20for%20Speed%20-%20Underground%202%20%28USA%29/60%20fps.cht) |
 | Otogi 2: Immortal Warriors (USA) | [60 fps](Otogi%202%20-%20Immortal%20Warriors%20%28USA%29/60%20fps.cht) |
 | Spider-Man (USA) | [Widescreen](Spider-Man%20%28USA%29/Widescreen.cht) |
 | Turok: Evolution (USA) | [Widescreen](Turok%20-%20Evolution%20%28USA%29/Widescreen.cht) |
