@@ -1,0 +1,27 @@
+# Need for Speed - Underground (USA)
+#
+# Widescreen [restart]
+#   Need for Speed - Underground (USA), default.xbe
+#   Nemesis2000 (https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay); converted from mods/45410047.1/widescreen/mod.txt
+#   Tested with hakuX-lr 8921d9d4a1 and RetroArch 1.22.2 (x86-64), headless.
+#   A race has a wider 16:9 view with the core's Screen Format set to Widescreen. The HUD and the pause menu remain stretched. The movies' part of the patch was not checked.
+#   A 16:9 view of the 3D scene, with the console's video set to widescreen. The HUD and the menus stay stretched.
+#
+# 60 fps [restart]
+#   Need for Speed - Underground (USA), default.xbe
+#   Jao12345 (https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay), with hakuX's time step change; converted from mods/45410047.1/60fps/mod.txt
+#   Tested with hakuX-lr 8921d9d4a1 and RetroArch 1.22.2 (x86-64), headless.
+#   The game runs at 60 fps (30 unpatched); the lap clock counted 125.6 s in 123.4 s (124.8 s in 122.8 s unpatched). Checked in one circuit race; not play-tested by hand.
+#   The game at 60 frames a second instead of 30, at its normal speed. A frame the device doesn't finish in time shows a vblank late.
+
+cheats = 2
+
+cheat0_desc = "Widescreen [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 E04A2C7A:0025C000+00008EEA:C744241C0000803FD9E8D95C2420D9E8D95C242C8B450483F801740F83F804740A83F802740583F8057518C744241CEC51683FC7442420CDCC8C3FC744242C00+00008F2A:00403F83F808740583F8097508C744241C56A9193F0FB797C40000008954241053DB442414D84C2424D80D2C431F00E8E69319008BD853E82AA71000D95C2428+00008F6A:53E8E0A71000D87C242C0FB787C40000008944242CD87C243890+000C97E9:AAAA2A+000C97F3:AAAA2A screen=widescreen"
+cheat0_enable = false
+
+cheat1_desc = "60 fps [restart]"
+cheat1_handler = 0
+cheat1_code = "xbe-patch-v1 E04A2C7A:0025C000+000056CE:90+00131159:EB"
+cheat1_enable = false

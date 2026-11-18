@@ -1,0 +1,15 @@
+# JSRF - Jet Set Radio Future (USA)
+#
+# Widescreen (16:9) [restart]
+#   JSRF - Jet Set Radio Future (USA), default.xbe
+#   icup321, https://github.com/icup321/XboxGraphicalPatches (16-9 Widescreen Patches)
+#   Tested with hakuX-lr fd7f638dd2 and RetroArch 1.22.2 (x86-64).
+#   The first area has a wider 16:9 view.
+#   The HUD remains stretched.
+
+cheats = 1
+
+cheat0_desc = "Widescreen (16:9) [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 3A4A7CC8:0022D000+001A9816:40 screen=widescreen"
+cheat0_enable = false

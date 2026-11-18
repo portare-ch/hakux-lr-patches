@@ -6,7 +6,7 @@ packs this folder into the APK (`android/app/build.gradle.kts`, task
 `syncModAssets`); the library's long-press menu shows **Mods & cheats** for a
 game that has a folder here, and the in-game menu's **Cheats** turns cheats
 on and off while playing. This file is not packed. RetroArch takes `.cht`
-files instead (this repository's top-level folders); hakuX-lr's
+files instead (this repository's top-level `.cht` files, one a game); hakuX-lr's
 `tools/mods/mod-to-cht.py` converts a mod's XBE patches.
 
 ```
