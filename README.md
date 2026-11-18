@@ -10,13 +10,21 @@ default and targets a specific XBE revision. Use a core build with
 2. Open **Quick Menu → Cheats → Load Cheat File (Replace)** and select the
    `.cht`. Use **Load Cheat File (Append)** to keep existing cheats.
 3. Enable the patch and select **Apply Changes**.
-4. For widescreen, set the core's **Screen Format** to **Widescreen** and
-   RetroArch's **Aspect Ratio** to **Core provided**.
+4. For widescreen, set RetroArch's **Aspect Ratio** to **Core provided**.
+   The core's **Screen Format** is **Auto** by default, which sets the console
+   to widescreen while a widescreen patch is applied; with a core older than
+   that option, set **Screen Format** to **Widescreen** yourself.
 5. Select **Quick Menu → Restart**.
 
 The core checks the XBE's CRC-32 and size before applying a patch. It logs
 revision mismatches and conflicts. Enable one patch per XBE, or use a combined
 entry. To revert a patch, disable it, apply changes, and restart.
+
+The widescreen patches end their code with `screen=widescreen`, which tells
+the core's **Screen Format: Auto** to set the console to widescreen. This
+needs hakuX-lr newer than 0.33.3: an older core refuses a code with that
+marker and logs it. Remove ` screen=widescreen` from `cheat0_code` to use
+such a file with an older core.
 
 ## Patches
 
@@ -46,8 +54,11 @@ From the hakuX-lr checkout, convert the stock XBE and an IPS, BPS, or patched
 XBE. IPS and BPS inputs require Floating IPS (`flips`).
 
 ```sh
-python3 tools/mods/xbe-to-cht.py default.xbe widescreen.ips > Widescreen.cht
+python3 tools/mods/xbe-to-cht.py --widescreen default.xbe widescreen.ips > Widescreen.cht
 ```
+
+`--widescreen` marks a patch for a 16:9 picture (`screen=widescreen`); leave
+it out for other patches.
 
 Put the file in the folder for its game release. Use `--note` to record the
 region, revision, XBE filename, original author, source, and test results.

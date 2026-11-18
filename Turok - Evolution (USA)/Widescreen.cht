@@ -7,5 +7,5 @@
 cheats = 1
 cheat0_desc = "Widescreen (16:9) [restart]"
 cheat0_handler = 0
-cheat0_code = "xbe-patch-v1 637C837F:0024C000+00010567:40"
+cheat0_code = "xbe-patch-v1 637C837F:0024C000+00010567:40 screen=widescreen"
 cheat0_enable = false

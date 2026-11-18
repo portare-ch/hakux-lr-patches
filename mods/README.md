@@ -39,6 +39,10 @@ author: someone
 ```
 
 - `name:` (the folder name if missing), `description:`, `author:`.
+- `screen: widescreen` marks a mod for a 16:9 picture. `mod-to-cht.py` writes
+  it into the `.cht` as `screen=widescreen`, and RetroArch's **Screen Format:
+  Auto** then sets the console to widescreen while the patch is applied. The
+  Android app does not read it.
 - `refresh: 120` runs the console's vblank at that rate (for a 60 Hz video
   mode; a 50 Hz one scales with it): a game paced by vblanks presents that
   many frames a second. A frame-locked game then runs that much faster
