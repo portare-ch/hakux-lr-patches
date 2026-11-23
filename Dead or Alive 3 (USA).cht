@@ -1,0 +1,27 @@
+# Dead or Alive 3 (USA)
+#
+# 128 MB memory [restart]
+#   Dead or Alive 3 (USA), default.xbe
+#   hakuX
+#   Tested with a hakuX-lr development build and RetroArch 1.22.2 (x86-64), headless.
+#   With Console RAM at 128 MB and the RAM limit patch on, the unpatched game draws without textures and menu text; with this patch the picture is as at 64 MB (intro, character select, one fight). 256 MB was not tested: the masks are widened to 128 MB.
+#   The game's Direct3D keeps only 26 bits of a texture's or buffer's address (64 MB). This widens the eight masks to 27 bits, so the game can use the memory above 64 MB. Needs the core's Console RAM at 128 MB and its RAM limit patch on. On its own it changes nothing visible; the 720p patch needs it.
+#
+# 720p (1280x720) [restart]
+#   Dead or Alive 3 (USA), default.xbe
+#   hakuX
+#   Tested with a hakuX-lr development build that has the 720p option (not in a release yet) and RetroArch 1.22.2 (x86-64), headless and played on a display at render scales 1x and 3x.
+#   The game creates a 1280x720 display and holds 59.9 fps. Seen correct: copyright text, intro video (shown 4:3 with bars at the sides), title, character select, fights with HUD and pause menu, win and lose screens, the idle demo scenes. Not checked: options, replays, endings, saving and loading, versus and tag modes.
+#   The game draws 1280x720 widescreen instead of 720x480. Its Direct3D stretches everything drawn to the back buffer from the game's 720x480 layout, so menus, HUD and video keep their places. The 3D scene is rendered into the game's own 1440x960 buffer and scaled to 1280x720. Needs the 128 MB memory patch with it, the core's 720p option on, Console RAM at 128 MB and the RAM limit patch on; with 64 MB the game runs out of memory and stays black.
+
+cheats = 2
+
+cheat0_desc = "128 MB memory [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 33D6EDF3:003BF000+001A21BD:07+001A4C71:07+001A4E34:07+001A4EA9:07+001A4EF1:07+001A4F6C:07+001A8B3D:07+001AB7A5:07"
+cheat0_enable = false
+
+cheat1_desc = "720p (1280x720) [restart]"
+cheat1_handler = 0
+cheat1_code = "xbe-patch-v1 33D6EDF3:003BF000+001439B4:398EE33F0000C03F+00143A23:00050000+00143A28:D0020000+00143A8B:6A108F05D0F49000891D44F590008BC166B9E001909090+001A1B10:8B860C0400008DBE502100003BC7750CBFD0020000B8E0010000EB3E8B411085C075258B790C8BCFC1E91483E10FB801000000D3E08BCFC1E91883E10F8BF8B8+001A1B50:01000000D3E0EB128BF881E7FF0F000047C1E80C25FF0F0000400353083BD772028BD78B4B0C03CD3BC873028BC1EB31+001A3069:8C000000+001A306D:A198051C00F6C430747E8BC8DDD8C1E90483E10F894C2410DB4424108BD0D95C241083E20F89542414DB442414F6C410D94424107423D80D80D41E00B710D9C1+001A30AD:D81D54D51E00DFE0F6C441750CD9C9B720D80D80D41E00D9C9D8D1DFE0F6C4057A06D9542410EB06D9C1D95C2410D80DB4391500D99E00050000D80DB8391500+001A30ED:D99E04050000EB10D9E8EBE2D99600050000D99E04050000 screen=widescreen"
+cheat1_enable = false
