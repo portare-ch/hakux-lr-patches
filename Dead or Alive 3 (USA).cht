@@ -1,18 +1,16 @@
-# Dead or Alive 3 (USA)
+# Dead or Alive 3 (USA), default.xbe
+# Patches by hakuX. Tested on x86-64 with a hakuX-lr development build
+# and RetroArch 1.22.2.
 #
 # 128 MB memory [restart]
-#   Dead or Alive 3 (USA), default.xbe
-#   hakuX
-#   Tested with a hakuX-lr development build and RetroArch 1.22.2 (x86-64), headless.
-#   With Console RAM at 128 MB and the RAM limit patch on, the unpatched game draws without textures and menu text; with this patch the picture is as at 64 MB (intro, character select, one fight). 256 MB was not tested: the masks are widened to 128 MB.
-#   The game's Direct3D keeps only 26 bits of a texture's or buffer's address (64 MB). This widens the eight masks to 27 bits, so the game can use the memory above 64 MB. Needs the core's Console RAM at 128 MB and its RAM limit patch on. On its own it changes nothing visible; the 720p patch needs it.
+#   Widens Direct3D address masks from 26 to 27 bits to fix missing textures
+#   and menu text at 128 MB.
+#   Set Console RAM to 128 MB and enable the RAM limit patch.
 #
 # 720p (1280x720) [restart]
-#   Dead or Alive 3 (USA), default.xbe
-#   hakuX
-#   Tested with a hakuX-lr development build that has the 720p option (not in a release yet) and RetroArch 1.22.2 (x86-64), headless and played on a display at render scales 1x and 3x.
-#   The game creates a 1280x720 display and holds 59.9 fps. Seen correct: copyright text, intro video (shown 4:3 with bars at the sides), title, character select, fights with HUD and pause menu, win and lose screens, the idle demo scenes. Not checked: options, replays, endings, saving and loading, versus and tag modes.
-#   The game draws 1280x720 widescreen instead of 720x480. Its Direct3D stretches everything drawn to the back buffer from the game's 720x480 layout, so menus, HUD and video keep their places. The 3D scene is rendered into the game's own 1440x960 buffer and scaled to 1280x720. Needs the 128 MB memory patch with it, the core's 720p option on, Console RAM at 128 MB and the RAM limit patch on; with 64 MB the game runs out of memory and stays black.
+#   Enables widescreen 720p while preserving menu, HUD, and video layout.
+#   Enable the 128 MB memory entry above and the core's 720p option.
+#   Tested at 1x and 3x render scales, holding 59.9 fps.
 
 cheats = 2
 
