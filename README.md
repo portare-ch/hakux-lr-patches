@@ -43,6 +43,7 @@ it with an older core.
 | [Baldur's Gate: Dark Alliance II (USA)](Baldur%27s%20Gate%20-%20Dark%20Alliance%20II%20%28USA%29.cht) | Widescreen (16:9) |
 | [Conker: Live & Reloaded (USA)](Conker%20-%20Live%20%26%20Reloaded%20%28USA%29.cht) | 60 fps |
 | [Crimson Skies: High Road to Revenge (USA)](Crimson%20Skies%20-%20High%20Road%20to%20Revenge%20%28USA%29.cht) | 60 fps |
+| [Dead or Alive 3 (USA)](Dead%20or%20Alive%203%20%28USA%29.cht) | 128 MB memory, 720p (1280x720) |
 | [Forza Motorsport (World)](Forza%20Motorsport%20%28World%29.cht) | 60 fps |
 | [Halo 2 (USA)](Halo%202%20%28USA%29.cht) | 60 fps |
 | [Halo: Combat Evolved (USA, Rev 2)](Halo%20-%20Combat%20Evolved%20%28USA%29%20%28Rev%202%29.cht) | 60 fps |
@@ -54,6 +55,7 @@ it with an older core.
 | [Turok: Evolution (USA)](Turok%20-%20Evolution%20%28USA%29.cht) | Widescreen (16:9) |
 
 The widescreen and High LOD patches come from [icup321's XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches). The 60 fps patches are hakuX's mods, converted from [`mods/`](mods/README.md). The Need for Speed: Underground patches are Nemesis2000's (widescreen) and Jao12345's (Underground's 60 fps, with a time step change), from [Xbox Magic Patches by Jay](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay).
+The Dead or Alive 3 patches were developed and tested for hakuX-lr. To use 720p, enable the 128 MB memory entry and the core's 720p option (currently available in development builds), set Console RAM to 128 MB, and enable the RAM limit patch.
 Each entry's comment in the file records the tested build and result. Widescreen expands the 3D view
 to 16:9. The HUD remains stretched.
 
