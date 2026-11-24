@@ -55,7 +55,7 @@ it with an older core.
 | [Turok: Evolution (USA)](Turok%20-%20Evolution%20%28USA%29.cht) | Widescreen (16:9) |
 
 The widescreen and High LOD patches come from [icup321's XboxGraphicalPatches](https://github.com/icup321/XboxGraphicalPatches). The 60 fps patches are hakuX's mods, converted from [`mods/`](mods/README.md). The Need for Speed: Underground patches are Nemesis2000's (widescreen) and Jao12345's (Underground's 60 fps, with a time step change), from [Xbox Magic Patches by Jay](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay).
-The Dead or Alive 3 patches are hakuX's: 720p needs the 128 MB memory entry with it, the core's 720p option (not in a release yet), Console RAM at 128 MB and the RAM limit patch on.
+The Dead or Alive 3 patches were developed and tested for hakuX-lr. To use 720p, enable the 128 MB memory entry and the core's 720p option (currently available in development builds), set Console RAM to 128 MB, and enable the RAM limit patch.
 Each entry's comment in the file records the tested build and result. Widescreen expands the 3D view
 to 16:9. The HUD remains stretched.
 
