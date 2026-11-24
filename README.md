@@ -37,7 +37,7 @@ it with an older core.
 
 ## Patches
 
-| Game (its `.cht`) | Patch | Credit |
+| Game | Patch | Credit |
 | --- | --- | --- |
 | [Baldur's Gate: Dark Alliance (USA)](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 |  | Force High LOD | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
