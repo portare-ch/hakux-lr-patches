@@ -2,7 +2,7 @@
 #
 # 60 fps [restart]
 #   Otogi 2 - Immortal Warriors (USA), default.xbe
-#   hakuX, converted from mods/46530004.2/60fps/mod.txt
+#   hakuX
 #   Tested with hakuX-lr fd7f638dd2 and RetroArch 1.22.2 (x86-64).
 #   The patch applies; the test reached only the menus, which stay at 30 fps.
 #   Stages at 60 frames a second, the game at its normal speed: the camera and the models are drawn between the game's 30 steps a second (effects still move 30 times a second).

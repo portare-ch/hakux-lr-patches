@@ -1,0 +1,15 @@
+# Project Gotham Racing 2 (USA)
+#
+# 60 fps [restart]
+#   Project Gotham Racing 2 (USA), default.xbe
+#   hakuX
+#   Tested with hakuX-lr a59efa9259 and RetroArch 1.22.2 (x86-64), headless.
+#   Races run at 60 fps (30 unpatched). Checked in one race; not play-tested by hand.
+#   Races at 60 frames a second instead of 30. The game steps by the vblanks a frame took, so it keeps its speed when the device can't hold 60.
+
+cheats = 1
+
+cheat0_desc = "60 fps [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 BDF80F2E:00295000+0027F344:01"
+cheat0_enable = false

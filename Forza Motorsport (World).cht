@@ -2,7 +2,7 @@
 #
 # 60 fps [restart]
 #   Forza Motorsport (World), default.xbe
-#   hakuX, converted from mods/4D53006E.1/60fps/mod.txt
+#   hakuX
 #   Tested with hakuX-lr fd7f638dd2 and RetroArch 1.22.2 (x86-64).
 #   The game runs at 60 fps (30 unpatched).
 #   The game at 60 frames a second instead of 30. Each frame shows at the next vblank and the game steps 1/60 s a frame; a frame the device doesn't finish in time shows late, and the game slows down with it.

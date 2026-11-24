@@ -42,19 +42,20 @@ it with an older core.
 | [Baldur's Gate: Dark Alliance (USA)](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 |  | Force High LOD | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 | [Baldur's Gate: Dark Alliance II (USA)](Baldur%27s%20Gate%20-%20Dark%20Alliance%20II%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
-| [Conker: Live & Reloaded (USA)](Conker%20-%20Live%20%26%20Reloaded%20%28USA%29.cht) | 60 fps | [hakuX](mods/4D530051.2/60fps/mod.txt) |
-| [Crimson Skies: High Road to Revenge (USA)](Crimson%20Skies%20-%20High%20Road%20to%20Revenge%20%28USA%29.cht) | 60 fps | [hakuX](mods/4D530021.1/60fps/mod.txt) |
+| [Conker: Live & Reloaded (USA)](Conker%20-%20Live%20%26%20Reloaded%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D530051.2/60fps/mod.txt) |
+| [Crimson Skies: High Road to Revenge (USA)](Crimson%20Skies%20-%20High%20Road%20to%20Revenge%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D530021.1/60fps/mod.txt) |
 | [Dead or Alive 3 (USA)](Dead%20or%20Alive%203%20%28USA%29.cht) | 128 MB memory | [hakuX-lr](https://github.com/portare-ch/hakux-lr-patches/pull/5) |
 |  | 720p (1280x720) | [hakuX-lr](https://github.com/portare-ch/hakux-lr-patches/pull/5) |
-| [Forza Motorsport (World)](Forza%20Motorsport%20%28World%29.cht) | 60 fps | [hakuX](mods/4D53006E.1/60fps/mod.txt) |
-| [Halo 2 (USA)](Halo%202%20%28USA%29.cht) | 60 fps | [hakuX](mods/4D530064.3/60fps/mod.txt) |
-| [Halo: Combat Evolved (USA, Rev 2)](Halo%20-%20Combat%20Evolved%20%28USA%29%20%28Rev%202%29.cht) | 60 fps | [hakuX](mods/4D530004.9/60fps/mod.txt) |
+| [Forza Motorsport (World)](Forza%20Motorsport%20%28World%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D53006E.1/60fps/mod.txt) |
+| [Halo 2 (USA)](Halo%202%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D530064.3/60fps/mod.txt) |
+| [Halo: Combat Evolved (USA, Rev 2)](Halo%20-%20Combat%20Evolved%20%28USA%29%20%28Rev%202%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D530004.9/60fps/mod.txt) |
 | [Jet Set Radio Future (USA)](JSRF%20-%20Jet%20Set%20Radio%20Future%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 | [Need for Speed: Underground (USA)](Need%20for%20Speed%20-%20Underground%20%28USA%29.cht) | Widescreen | [Nemesis2000](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) |
-|  | 60 fps | [Jao12345](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) + [hakuX](mods/45410047.1/60fps/mod.txt) |
+|  | 60 fps | [Jao12345](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) + [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/45410047.1/60fps/mod.txt) |
 | [Need for Speed: Underground 2 (USA)](Need%20for%20Speed%20-%20Underground%202%20%28USA%29.cht) | Widescreen | [Nemesis2000](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) |
-|  | 60 fps | [hakuX](mods/4541005A.1/60fps/mod.txt) |
-| [Otogi 2: Immortal Warriors (USA)](Otogi%202%20-%20Immortal%20Warriors%20%28USA%29.cht) | 60 fps | [hakuX](mods/46530004.2/60fps/mod.txt) |
+|  | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4541005A.1/60fps/mod.txt) |
+| [Otogi 2: Immortal Warriors (USA)](Otogi%202%20-%20Immortal%20Warriors%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/46530004.2/60fps/mod.txt) |
+| [Project Gotham Racing 2 (USA)](Project%20Gotham%20Racing%202%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D53004B.2/60fps/mod.txt) |
 | [Spider-Man (USA)](Spider-Man%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 | [Turok: Evolution (USA)](Turok%20-%20Evolution%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 
@@ -86,11 +87,25 @@ mv joined.cht "Game (USA).cht"
 Make one entry per feature. Do not add an entry that repeats two others
 combined: the core applies the enabled entries together.
 
-## Android mods
+## Memory cheats
 
-[`mods/`](mods/README.md) holds the hakuX-lr Android app's mods and cheats,
-one folder per title ID and version. hakuX-lr includes this repository as its
-`patches` submodule and packs that folder into the APK. Some mods need more
-than byte patches (`refresh: 120`, title-update sections), so not every mod
-has a `.cht` yet. Convert a mod's XBE patches with hakuX-lr's
-`tools/mods/mod-to-cht.py`.
+A cheat entry's code can also be memory cheat lines instead of an XBE patch,
+joined by `+` or new lines. They run in order every frame while the entry is
+on:
+
+| Line | Does |
+|---|---|
+| `w8 A V`, `w16 A V`, `w32 A V` | writes the 8 / 16 / 32-bit value V at A |
+| `wf A F` | writes the float F at A |
+| `if8 A C V`, `if16`, `if32`, `iff` | runs the lines up to `else` / `end` only if the value at A compares to V; C is `==`, `!=`, `<`, `>`, `<=`, `>=` (unsigned; signed floats for `iff`) or `&` (all of V's bits set) |
+| `else`, `end` | the other branch; the end of an `if` (up to 8 deep) |
+
+
+- An address A is a virtual address of the game (as a debugger or Cheat
+  Engine on the console shows it: the XBE at 0x00010000, its heap above, the
+  contiguous memory at 0x80000000). `[A]+N` (or `-N`) reads the 32-bit
+  pointer at A and adds N; they nest: `[[0x00456700]+4]+0x10`. A pointer to
+  unmapped memory skips the line; an unmapped address skips a write and
+  makes an `if` false.
+- Values are written only when they differ, little-endian as the Xbox
+  stores them.
