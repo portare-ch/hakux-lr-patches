@@ -18,7 +18,7 @@
 #   Need for Speed - Underground 2 (USA), default.xbe
 #   hakuX-lr
 #   Tested with hakuX-lr dbc8b16778 and RetroArch 1.22.2 (x86-64), headless.
-#   Raises the game's memory pool from 55 MB to 79 MB, which 720p needs.
+#   Raises the game's memory pool from 55 MB to 96 MB, which 720p needs.
 #   Set Console RAM to 128 MB and enable the RAM limit patch.
 #
 # 720p (1280x720) [restart]
@@ -42,7 +42,7 @@ cheat1_enable = false
 
 cheat2_desc = "128 MB memory [restart]"
 cheat2_handler = 0
-cheat2_code = "xbe-patch-v1 EDF74C5F:003DA000+00380FE8:0000F004"
+cheat2_code = "xbe-patch-v1 EDF74C5F:003DA000+00380FE8:00000006"
 cheat2_enable = false
 
 cheat3_desc = "720p (1280x720) [restart]"
