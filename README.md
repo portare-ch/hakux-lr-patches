@@ -56,6 +56,8 @@ it with an older core.
 |  | 720p (1280x720) | [hakuX-lr](https://github.com/portare-ch/hakux-lr-patches/pull/7) + [Nemesis2000](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) |
 | [Need for Speed: Underground 2 (USA)](Need%20for%20Speed%20-%20Underground%202%20%28USA%29.cht) | Widescreen | [Nemesis2000](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) |
 |  | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4541005A.1/60fps/mod.txt) |
+|  | 128 MB memory | [hakuX-lr](https://github.com/portare-ch/hakux-lr-patches/pull/8) |
+|  | 720p (1280x720) | [hakuX-lr](https://github.com/portare-ch/hakux-lr-patches/pull/8) + [Nemesis2000](https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay) |
 | [Otogi 2: Immortal Warriors (USA)](Otogi%202%20-%20Immortal%20Warriors%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/46530004.2/60fps/mod.txt) |
 | [Project Gotham Racing 2 (USA)](Project%20Gotham%20Racing%202%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D53004B.2/60fps/mod.txt) |
 | [Spider-Man (USA)](Spider-Man%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
