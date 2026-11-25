@@ -42,6 +42,7 @@ it with an older core.
 | [Baldur's Gate: Dark Alliance (USA)](Baldur%27s%20Gate%20-%20Dark%20Alliance%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 |  | Force High LOD | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
 | [Baldur's Gate: Dark Alliance II (USA)](Baldur%27s%20Gate%20-%20Dark%20Alliance%20II%20%28USA%29.cht) | Widescreen (16:9) | [icup321](https://github.com/icup321/XboxGraphicalPatches) |
+| [Burnout 3: Takedown (USA)](Burnout%203%20-%20Takedown%20%28USA%29.cht) | 720p (1280x720) | [hakuX-lr](https://github.com/portare-ch/hakux-lr-patches/pull/9) |
 | [Conker: Live & Reloaded (USA)](Conker%20-%20Live%20%26%20Reloaded%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D530051.2/60fps/mod.txt) |
 | [Crimson Skies: High Road to Revenge (USA)](Crimson%20Skies%20-%20High%20Road%20to%20Revenge%20%28USA%29.cht) | 60 fps | [hakuX](https://github.com/portare-ch/hakux-lr-patches/blob/be5d88c/mods/4D530021.1/60fps/mod.txt) |
 | [Dead or Alive 3 (USA)](Dead%20or%20Alive%203%20%28USA%29.cht) | 128 MB memory | [hakuX-lr](https://github.com/portare-ch/hakux-lr-patches/pull/5) |
