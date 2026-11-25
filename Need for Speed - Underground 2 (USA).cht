@@ -13,8 +13,22 @@
 #   Tested with hakuX-lr 8921d9d4a1 and RetroArch 1.22.2 (x86-64).
 #   Races run at 60 fps (30 unpatched); the race clock counted 93.4 s in 93.7 s (93.6 s unpatched). Checked in one circuit race, headless; not play-tested by hand.
 #   Driving at 60 frames a second instead of 30, like the menus, at the game's normal speed. A frame the device doesn't finish in time shows a vblank late.
+#
+# 128 MB memory [restart]
+#   Need for Speed - Underground 2 (USA), default.xbe
+#   hakuX-lr
+#   Tested with hakuX-lr dbc8b16778 and RetroArch 1.22.2 (x86-64), headless.
+#   Raises the game's memory pool from 55 MB to 79 MB, which 720p needs.
+#   Set Console RAM to 128 MB and enable the RAM limit patch.
+#
+# 720p (1280x720) [restart]
+#   Need for Speed - Underground 2 (USA), default.xbe
+#   hakuX-lr, with the wider view of Nemesis2000's Widescreen patch
+#   Tested with hakuX-lr dbc8b16778 and RetroArch 1.22.2 (x86-64), headless, at 1x and 2x render scales.
+#   Widescreen 720p with the wider 16:9 view; menus, HUD and movies laid out as in the game's widescreen mode.
+#   Enable the 128 MB memory entry above and the core's 720p option; without that option the game returns to the dashboard.
 
-cheats = 2
+cheats = 4
 
 cheat0_desc = "Widescreen [restart]"
 cheat0_handler = 0
@@ -25,3 +39,13 @@ cheat1_desc = "60 fps [restart]"
 cheat1_handler = 0
 cheat1_code = "xbe-patch-v1 EDF74C5F:003DA000+00093B51:B8010000009090909090+00396E02:08"
 cheat1_enable = false
+
+cheat2_desc = "128 MB memory [restart]"
+cheat2_handler = 0
+cheat2_code = "xbe-patch-v1 EDF74C5F:003DA000+00380FE8:0000F004"
+cheat2_enable = false
+
+cheat3_desc = "720p (1280x720) [restart]"
+cheat3_handler = 0
+cheat3_code = "xbe-patch-v1 EDF74C5F:003DA000+000926F1:0AC3+00093474:C745100000803FC7450C0000403FC7451C0000803F833D48A63E00037507C7450C0000C03E8B470483F801741983F804741483F802740F83F805740A83F80674+000934B4:0583F8077515C7450CEC51683FC74510CDCC8C3FC7451C0000403F83F809740583F80A7507C7450C56A9193F83F8037507C7450C000000+00093526:7D1C909090+0009E5DC:D90568383400+001B1A89:D905683834000F1F006690+0038EF80:00050000D0020000 screen=widescreen"
+cheat3_enable = false
