@@ -1,0 +1,39 @@
+# Black (USA)
+#
+# Widescreen [restart]
+#   Black (USA), default.xbe
+#   Nemesis2000 (https://www.jayxbox.com/Retail-Game-Modification/PatchHub.php)
+#   Tested with hakuX-lr dbc8b16778 and RetroArch 1.22.2 (x86-64), headless.
+#   The full-width 16:9 view in the game's widescreen mode, which otherwise is a little wider than 4:3 and cropped at the top and bottom.
+#   Set the console's video to widescreen (the core's Screen Format: Auto does it).
+#
+# 60 fps [restart]
+#   Black (USA), default.xbe
+#   hakuX-lr
+#   Tested with hakuX-lr dbc8b16778 and RetroArch 1.22.2 (x86-64), headless.
+#   The game presents every vblank and steps 1/60 s a frame instead of 1/30 s. Movies, menus and the first mission ran at 60 fps at the normal speed.
+#   Checked in the first minute of the first mission only, at 480p and 720p; not play-tested by hand.
+#
+# 720p (1280x720) [restart]
+#   Black (USA), default.xbe
+#   hakuX-lr, with the wider view of Nemesis2000's Widescreen patch
+#   Tested with hakuX-lr dbc8b16778 and RetroArch 1.22.2 (x86-64), headless.
+#   Widescreen 720p with the full-width 16:9 view: the game asks Direct3D for 1280x720 progressive. Title, movies, pause menu and the first mission checked at 1x and 2x render scales.
+#   Set Console RAM to 128 MB, enable the RAM limit patch and the core's 720p option; without any of them the game returns to the dashboard.
+
+cheats = 3
+
+cheat0_desc = "Widescreen [restart]"
+cheat0_handler = 0
+cheat0_code = "xbe-patch-v1 0DC9957C:002AF000+0014A998:90 screen=widescreen"
+cheat0_enable = false
+
+cheat1_desc = "60 fps [restart]"
+cheat1_handler = 0
+cheat1_code = "xbe-patch-v1 0DC9957C:002AF000+001683F1:01+00183EB2:A85D+001FC2A8:A85D+001FC2B2:10+00202214:A85D"
+cheat1_enable = false
+
+cheat2_desc = "720p (1280x720) [restart]"
+cheat2_handler = 0
+cheat2_code = "xbe-patch-v1 0DC9957C:002AF000+0014A998:90+0016838B:D002+0016839A:0005+001683F9:5000+00168405:EB+00168455:9090 screen=widescreen"
+cheat2_enable = false
