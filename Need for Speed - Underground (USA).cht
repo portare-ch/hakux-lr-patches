@@ -13,8 +13,15 @@
 #   Tested with hakuX-lr 8921d9d4a1 and RetroArch 1.22.2 (x86-64), headless.
 #   The game runs at 60 fps (30 unpatched); the lap clock counted 125.6 s in 123.4 s (124.8 s in 122.8 s unpatched). Checked in one circuit race; not play-tested by hand.
 #   The game at 60 frames a second instead of 30, at its normal speed. A frame the device doesn't finish in time shows a vblank late.
+#
+# 720p (1280x720) [restart]
+#   Need for Speed - Underground (USA), default.xbe
+#   hakuX-lr; the wider view is Nemesis2000's Widescreen patch (https://github.com/JayYardley/Xbox-Magic-Patches-by-Jay)
+#   Tested with hakuX-lr dbc8b16778 and RetroArch 1.22.2 (x86-64), headless.
+#   Widescreen 720p with the Widescreen entry's wider view. Menus, HUD and movies fill the screen; the HUD and menus stay stretched.
+#   Set Console RAM to 128 MB, enable the RAM limit patch and the core's 720p option.
 
-cheats = 2
+cheats = 3
 
 cheat0_desc = "Widescreen [restart]"
 cheat0_handler = 0
@@ -25,3 +32,8 @@ cheat1_desc = "60 fps [restart]"
 cheat1_handler = 0
 cheat1_code = "xbe-patch-v1 E04A2C7A:0025C000+000056CE:90+00131159:EB"
 cheat1_enable = false
+
+cheat2_desc = "720p (1280x720) [restart]"
+cheat2_handler = 0
+cheat2_code = "xbe-patch-v1 E04A2C7A:0025C000+00005684:C744242C50000000+00005740:C64424702EC6442474509090+00008EEA:C744241C0000803FD9E8D95C2420D9E8D95C242C8B450483F801740F83F804740A83F802740583F8057518C744241CEC51683FC7442420CDCC8C3FC744242C00+00008F2A:00403F83F808740583F8097508C744241C56A9193F0FB797C40000008954241053DB442414D84C2424D80D2C431F00E8E69319008BD853E82AA71000D95C2428+00008F6A:53E8E0A71000D87C242C0FB787C40000008944242CD87C243890+000938AD:0000803F+000C97E9:AAAA2A+000C97F3:AAAA2A+0020A010:00050000D0020000+0023F750:00000005 screen=widescreen"
+cheat2_enable = false
